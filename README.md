@@ -2,6 +2,6 @@ telelvis's ProjectEuler
 ============
 
 Here I store my solutions for projecteuler.com problems.
-For education and lulz purposes.
+For education and lulz.
 
-You can use this code for free, but better try to think on solution with your own head.
+Feel free to use this code, but you better try to find solution yourself.
