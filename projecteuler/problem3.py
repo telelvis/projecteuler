@@ -32,4 +32,5 @@ def largest_prime_factor(n):
         i += 1
         m = int(n/i)
 
-print largest_prime_factor(600851475143)
+if __name__ == '__main__':
+    print largest_prime_factor(600851475143)
