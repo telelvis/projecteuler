@@ -14,23 +14,23 @@
 
 def is_prime(n):
     i = 2
-    m = int(n/i)
+    m = n//i
     while i <= m:
         if n%i == 0:
             return False
         i += 1
-        m = int(n/i)
+        m = n//i
     return True
 
 
 def largest_prime_factor(n):
     i = 1
-    m = int(n/i)
+    m = n//i
     while 1:
         if n%m == 0 and is_prime(m):
             return m
         i += 1
-        m = int(n/i)
+        m = n//i
 
 if __name__ == '__main__':
     print largest_prime_factor(600851475143)
