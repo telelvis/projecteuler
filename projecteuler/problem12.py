@@ -44,13 +44,15 @@ def get_divisors(n):
             yield i
         yield n
 
-m = 0
 
-for i in get_triangle():
-    c = len([j for j in get_divisors(i)])
-    if c > m:
-        m = c
-        if m > 500:
-            break
+if __name__ == '__main__':
+    m = 0
 
-print i
+    for i in get_triangle():
+        c = len([j for j in get_divisors(i)])
+        if c > m:
+            m = c
+            if m > 500:
+                break
+
+    print i
