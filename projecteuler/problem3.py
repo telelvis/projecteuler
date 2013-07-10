@@ -1,15 +1,15 @@
 #!/usr/bin/python
 """
-(c) projecteuler.net
-Largest prime factor
-Problem 3
-The prime factors of 13195 are 5, 7, 13 and 29.
+    (c) projecteuler.net
+    Largest prime factor
+    Problem 3
+    The prime factors of 13195 are 5, 7, 13 and 29.
 
-What is the largest prime factor of the number 600851475143 ?
-"""
+    What is the largest prime factor of the number 600851475143 ?
+    """
 
 """
-Slow brutecode =(
+    Slow brutecode =(
 """
 
 def is_prime(n):

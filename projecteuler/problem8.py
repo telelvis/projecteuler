@@ -1,9 +1,10 @@
 #!/usr/bin/python
 """
-(c) projecteuler.net
-Largest product in a series
-Problem 8
-Find the greatest product of five consecutive digits in the 1000-digit number.
+    (c) projecteuler.net
+    Largest product in a series
+    Problem 8
+    Find the greatest product of five consecutive digits in the 1000-digit 
+    number.
 """
 
 num = '73167176531330624919225119674426574742355349194934\
