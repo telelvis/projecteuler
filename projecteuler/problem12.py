@@ -24,8 +24,6 @@
     divisors?
 """
 
-import time
-
 def get_triangle():
     i = s = 0
     while 1:
@@ -36,18 +34,23 @@ def get_triangle():
 
 def get_divisors(n):
     i = 1
-    while i*2 <= n:
+    while i < n/i:
         if n%i == 0:
             yield i
+            yield n//i
         i += 1
     else:
+        if n%i == 0:
+            yield i
         yield n
 
 m = 0
-t = time.time()
+
 for i in get_triangle():
     c = len([j for j in get_divisors(i)])
     if c > m:
         m = c
-        print time.time() - t, m
-        t = time.time()
+        if m > 500:
+            break
+
+print i
