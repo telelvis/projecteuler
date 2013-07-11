@@ -15,14 +15,4 @@
 from problem12 import get_divisors
 
 amis = {i: sum([j for j in get_divisors(i) if i!=j]) for i in range(1, 10000)}
-s = 0
-simi = {}
-
-for i,k in amis.items():
-    if not simi.has_key(k):
-        simi[k] = []
-    while k in amis.values():
-        simi[k].append(amis.keys()[amis.values().index(k)])
-        amis.pop(i)
-
-print simi
+print sum([i for i, j in amis.viewitems() if amis.get(j) == i and i != j])
