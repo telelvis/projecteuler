@@ -17,10 +17,10 @@
 """
 
 n = 2000000
-primes = set(range(2,n))
+primes = set(range(2, n))
 
 for i in list(primes):
     if i in primes:
-        primes -= set(range(i+i, n ,i))
+        primes -= set(range(i + i, n, i))
 
 print sum(primes)
